@@ -29,16 +29,14 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oz1-ml-z2n"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-pB-Ya5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-pB-Ya5">
                                 <rect key="frame" x="132" y="368" width="111" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy7-d7-gnN">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy7-d7-gnN">
                                 <rect key="frame" x="133" y="403" width="109" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop Recording"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBc-NF-BcQ"/>
@@ -47,8 +45,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="drW-im-fvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RA2-gJ-DS2"/>
-                            <constraint firstItem="drW-im-fvt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cS3-04-jle"/>
+                            <constraint firstItem="CNa-pB-Ya5" firstAttribute="top" secondItem="drW-im-fvt" secondAttribute="bottom" constant="20" id="43k-hy-ci5"/>
+                            <constraint firstItem="drW-im-fvt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AB3-Yk-36Y"/>
+                            <constraint firstItem="Dy7-d7-gnN" firstAttribute="centerX" secondItem="CNa-pB-Ya5" secondAttribute="centerX" id="HiR-nD-aLI"/>
+                            <constraint firstItem="CNa-pB-Ya5" firstAttribute="centerX" secondItem="drW-im-fvt" secondAttribute="centerX" id="Xl2-VD-BhR"/>
+                            <constraint firstItem="Dy7-d7-gnN" firstAttribute="top" secondItem="CNa-pB-Ya5" secondAttribute="bottom" constant="14" id="ncV-xy-QUf"/>
+                            <constraint firstItem="drW-im-fvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sfo-GN-HbT"/>
                         </constraints>
                     </view>
                     <connections>
